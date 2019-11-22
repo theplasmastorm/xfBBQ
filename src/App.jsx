@@ -22,6 +22,8 @@ import OrderHistory from "./components/orders/OrderHistory";
 
 import LogoutPage from "./components/login/UserLogout";
 
+import AlphaOrderForm from "./components/orders/AlphaOrderForm";
+
 export default function App() {
   const login = useSelector(state => state.login);
 
@@ -45,6 +47,7 @@ export default function App() {
             path="/UserRegistrationForm"
             component={UserRegistrationForm}
           />
+          <Route path="/AlphaOrderForm" component={AlphaOrderForm} />
           <Route path="/UsersList" component={UserList} />
           <Route path="/BBQRegistrationForm" component={BBQRegistrationForm} />
           <Route path="/BBQList" component={BBQList} />
