@@ -23,7 +23,7 @@ export default function Header() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon" />
           </button>
           <div
             className="collapse navbar-collapse"
@@ -66,7 +66,7 @@ export default function Header() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon" />
           </button>
           <div
             className="collapse navbar-collapse"
@@ -116,7 +116,7 @@ export default function Header() {
                       activeStyle={activeStyle}
                       className="nav-link"
                     >
-                      Create New BBQ
+                      BBQ Registration
                     </NavLink>
                   </li>
                   <li className="navbar-item">
@@ -151,16 +151,20 @@ export default function Header() {
                   Order History
                 </NavLink>
               </li>
-              <li className="navbar-item">
-                <NavLink
-                  to="/Logout"
-                  activeStyle={activeStyle}
-                  className="nav-link"
-                >
-                  Logout
-                </NavLink>
-              </li>
             </ul>
+            <div className="text-left text-lg-right">
+              <ul className="navbar-nav mr-auto navbar-right">
+                <li className="navbar-item">
+                  <NavLink
+                    to="/Logout"
+                    activeStyle={activeStyle}
+                    className="nav-link"
+                  >
+                    Logout
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
           </div>
         </>
       )}
